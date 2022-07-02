@@ -14,8 +14,10 @@ kotlin {
             dependencies {
                 implementation(projects.swClient)
 
-                implementation(libs.kotlin.wrappers.react.base)
-                implementation(libs.kotlin.wrappers.react.dom)
+//                implementation(libs.kotlin.wrappers.react.base)
+                implementation(libs.kotlin.wrappers.react.baseLegacy)
+//                implementation(libs.kotlin.wrappers.react.dom)
+                implementation(libs.kotlin.wrappers.react.domLegacy)
                 implementation(libs.kotlin.wrappers.react.redux)
                 implementation(libs.kotlin.wrappers.react.router.dom)
                 implementation(libs.kotlin.wrappers.styled)

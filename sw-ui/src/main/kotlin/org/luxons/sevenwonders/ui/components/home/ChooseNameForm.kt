@@ -23,7 +23,7 @@ private external interface ChooseNameFormState : State {
     var username: String
 }
 
-private class ChooseNameForm(props: ChooseNameFormProps) : RComponent<ChooseNameFormProps, ChooseNameFormState>(props) {
+private class ChooseNameForm(props: ChooseNameFormProps) : Component<ChooseNameFormProps, ChooseNameFormState>(props) {
 
     override fun ChooseNameFormState.init(props: ChooseNameFormProps) {
         username = ""
@@ -88,6 +88,10 @@ private class ChooseNameForm(props: ChooseNameFormProps) : RComponent<ChooseName
                 margin(2.px)
             }
         }
+    }
+
+    override fun render(): ReactNode? {
+        TODO("Not yet implemented")
     }
 }
 
